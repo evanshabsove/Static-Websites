@@ -1,0 +1,132 @@
+html, body {
+  height: 100%;
+}
+
+#wrapper {
+  padding-left: 250px;
+  transition: all 0.4s ease 0s;
+}
+
+#sidebar-wrapper {
+  margin-left: -250px;
+  left: 250px;
+  width: 250px;
+  background: #4C4C4C;
+  position: fixed;
+  height: 100%;
+  overflow-y: auto;
+  z-index: 1000;
+  transition: all 0.4s ease 0s;
+}
+
+#page-content-wrapper {
+  width: 100%;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width:767px) {
+  #wrapper {
+    padding-left: 0;
+  }
+  #sidebar-wrapper {
+    left: 0;
+  }
+  #wrapper.active {
+    position: relative;
+    left: 250px;
+  }
+  #wrapper.active #sidebar-wrapper {
+    left: 250px;
+    width: 250px;
+    transition: all 0.4s ease 0s;
+  }
+}
+
+/*Sidebar content style*/
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 60px;
+}
+
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  color: #DBDBDB;
+}
+
+.sidebar-nav li a:hover {
+  background: #636363;
+}
+
+/*boxes style*/
+#title-box {
+  position:relative;
+  top:0;
+  left:0px;
+  width: 100%;
+  height:100%;
+  z-index:1000;
+}
+#about-box {
+  background-color: #85C7F2;
+  position: relative;
+  top: 100%;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+}
+
+#experience-box {
+  background-color: #FFA69E;
+  position:relative;
+  top:200%;
+  left:0px;
+  width: 100%;
+  height:100%;
+  z-index:1000;
+}
+
+#Education-box {
+  background-color: #C7A27C;
+  position:relative;
+  top:300%;
+  left:0px;
+  width: 100%;
+  height:100%;
+  z-index:1000;
+}
+
+#Achievments-box {
+  background-color: #CCD7C5;
+  position:relative;
+  top:400%;
+  left:0px;
+  width: 100%;
+  height:100%;
+  z-index:1000;
+}
+
+.text {
+  text-align: center;
+  line-height: 300%;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  height: 30%;
+  width: 50%;
+  margin: -15% 0 0 -25%;
+}

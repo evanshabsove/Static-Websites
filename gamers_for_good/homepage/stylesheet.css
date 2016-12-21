@@ -1,0 +1,24 @@
+.navbar {
+  margin-bottom: 0 !important;
+}
+
+.content {
+  text-align: center;
+  padding-top: 2%;
+}
+
+.carousel-caption {
+  padding-bottom: 60px !important;
+}
+
+
+.feature-divider {
+  margin-top: 80px;
+  margin-bottom: 80px
+}
+
+.footer {
+  padding-top: 50px !important;
+  color: grey;
+
+}
